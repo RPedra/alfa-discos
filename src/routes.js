@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import QuemSomos from "./pages/QuemSomos";
 import Carrinho from "./pages/Carrinho"
+import FaleConosco from "./pages/FaleConosco";
 
 //Rotas Dentro de Categorias
 import Sertanejo from "./pages/Categorias/Sertanejo";
@@ -27,7 +28,8 @@ import Classica from "./pages/Categorias/Classica";
 
 //Rotas dentro de cadastro
 import CadastroOne from "./pages/Cadastro/CadastroOne";
-import CadastroTwo from "./pages/Cadastro/CadastroTwo";
+
+
 
 function Routes() {
     return (
@@ -42,6 +44,7 @@ function Routes() {
                 <Route path = "/login" component = {Login} />
                 <Route path = "/QuemSomos" component = {QuemSomos} />
                 <Route path = "/carrinho" component = {Carrinho} />
+                <Route path = "/faleconosco" component = {FaleConosco} />
 
                 {/*ROTAS DENTRO DE CATEGORIAS*/}
                 <Route path = "/sertanejo" component = {Sertanejo} />
@@ -57,9 +60,9 @@ function Routes() {
                 <Route path = "/reggae" component = {Reggae} />
                 <Route path = "/classica" component = {Classica} />
 
-                {/*Rotas dentro de Cadastro*/}
+                {/*ROTAS DENTRO DE CADASTRO*/}
                 <Route path = "/cadastroone" component = {CadastroOne} />
-                <Route path = "/cadastrotwo" component = {CadastroTwo} />
+                
             </Switch>
         </BrowserRouter>
     );

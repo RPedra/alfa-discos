@@ -1,10 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-function POP() {
+function FaleConosco() {
     return (
         <div>
-             <h1>POP</h1>
+             <h1>Fale Conosco</h1>
     
              <Link to = "Home"> Home </Link>
              <br/>
@@ -22,4 +22,4 @@ function POP() {
     );
 }
 
-export default POP;
+export default FaleConosco;
