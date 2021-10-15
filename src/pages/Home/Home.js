@@ -11,9 +11,9 @@ function Home() {
          <h1>Home</h1>
          <button 
             onClick = {() => {
-                history.push("Login") //history.goBack volta pra página anterior
+                history.push("Categorias") //history.goBack volta pra página anterior
              }}
-                >Logout</button>
+                >Explore Nossos Produtos!</button>
         </div>
     );
 }
