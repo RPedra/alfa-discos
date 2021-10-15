@@ -1,5 +1,7 @@
 import React from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom"
+
+//Rotas Gerais
 import Blog from "./pages/Blog";
 import Cadastro from "./pages/Cadastro";
 import Categorias from "./pages/Categorias";
@@ -7,7 +9,9 @@ import Explorar from "./pages/Explorar";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import QuemSomos from "./pages/QuemSomos";
+import Carrinho from "./pages/Carrinho"
 
+//Rotas Dentro de Categorias
 import Sertanejo from "./pages/Categorias/Sertanejo";
 import MPB from "./pages/Categorias/MPB";
 import PagodeSamba from "./pages/Categorias/PagodeSamba";
@@ -20,7 +24,10 @@ import Gospel from "./pages/Categorias/Gospel";
 import BluesJazz from "./pages/Categorias/BluesJazz";
 import Reggae from "./pages/Categorias/Reggae";
 import Classica from "./pages/Categorias/Classica";
-import Carrinho from "./pages/Carrinho";
+
+//Rotas dentro de cadastro
+import CadastroOne from "./pages/Cadastro/CadastroOne";
+import CadastroTwo from "./pages/Cadastro/CadastroTwo";
 
 function Routes() {
     return (
@@ -49,6 +56,10 @@ function Routes() {
                 <Route path = "/bluesjazz" component = {BluesJazz} />
                 <Route path = "/reggae" component = {Reggae} />
                 <Route path = "/classica" component = {Classica} />
+
+                {/*Rotas dentro de Cadastro*/}
+                <Route path = "/cadastroone" component = {CadastroOne} />
+                <Route path = "/cadastrotwo" component = {CadastroTwo} />
             </Switch>
         </BrowserRouter>
     );
