@@ -1,10 +1,12 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import Cabecalho from "../../Cabecalho";
+
 
 function CadastroOne() {
     return (
         <div>
              <h1>Primeira parte do cadastro</h1>
+            <Cabecalho/>
         </div>
         );
 

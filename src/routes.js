@@ -37,45 +37,6 @@ function Routes() {
         <BrowserRouter>
             <Switch>
                 {/*ROTAS GERAIS*/}
-                <Route path = "/blog" component = {header} />
-                <Route path = "/cadastro" component = {header} />
-                <Route path = "/categorias" component = {header} />
-                <Route path = "/explorar" component = {header} />
-                <Route path = "/home" component = {header} />
-                <Route path = "/login" component = {header} />
-                <Route path = "/QuemSomos" component = {header} />
-                <Route path = "/carrinho" component = {header} />
-                <Route path = "/faleconosco" component = {header} />
-                <Route path = "/temp" component = {header} />
-
-                {/*ROTAS DENTRO DE CATEGORIAS*/}
-                <Route path = "/sertanejo" component = {header} />
-                <Route path = "/MPB" component = {header} />
-                <Route path = "/PagodeSamba" component = {header} />
-                <Route path = "/rock" component = {header} />
-                <Route path = "/funk" component = {header} />
-                <Route path = "/rap" component = {header} />
-                <Route path = "/eletronicas" component = {header} />
-                <Route path = "/POP" component = {header} />
-                <Route path = "/gospel" component = {header} />
-                <Route path = "/bluesjazz" component = {header} />
-                <Route path = "/reggae" component = {header} />
-                <Route path = "/classica" component = {header} />
-               
-
-                {/*ROTAS DENTRO DE CADASTRO*/}
-                <Route path = "/cadastroone" component = {header} />
-                
-            </Switch>
-        </BrowserRouter>
-    );
-}
-
-function header(){
-    return(
-        <Cabecalho>
-            <Switch>
-                {/*ROTAS GERAIS*/}
                 <Route path = "/blog" component = {Blog} />
                 <Route path = "/cadastro" component = {Cadastro} />
                 <Route path = "/categorias" component = {Categorias} />
@@ -104,9 +65,12 @@ function header(){
 
                 {/*ROTAS DENTRO DE CADASTRO*/}
                 <Route path = "/cadastroone" component = {CadastroOne} />
+                
             </Switch>
-        </Cabecalho>
-    )
+        </BrowserRouter>
+    );
 }
+
+
 
 export default Routes;

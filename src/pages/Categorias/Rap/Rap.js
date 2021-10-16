@@ -1,10 +1,11 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import Cabecalho from "../../Cabecalho";
 
 function Rap() {
     return (
         <div>
              <h1>Rap</h1>
+             <Cabecalho/>
         </div>
     );
 }
