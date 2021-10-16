@@ -9,23 +9,9 @@ function Home() {
     return (
         <div>
          <h1>Home</h1>
-
-         <Link to = "Home"> Home </Link>
-         <br/>
-         <Link to = "Explorar">Explorar</Link>
-         <br/>
-         <Link to = "Categorias">Categorias</Link>
-         <br/>
-         <Link to = "QuemSomos">Quem Somos</Link>
-         <br/>
-         <Link to = "FaleConosco">Fale Conosco</Link>
-         <br/>
-         <Link to = "Login">Login</Link>
-         <br/>
-
          <button 
             onClick = {() => {
-                history.push("Categorias") //history.goBack volta pra página anterior
+                history.push("Explorar") //history.goBack volta pra página anterior
              }}
                 >Explore Nossos Produtos!</button>
         <br/>
