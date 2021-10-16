@@ -1,21 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {Nav} from "react-bootstrap";
 
 function Cabecalho(props){
     return(
-        <div>
+        <div className="header">
         {props.children}
-        <Link to = "Home"> Home </Link>
-        <br/>
-        <Link to = "Explorar">Explorar</Link>
-        <br/>
-        <Link to = "Categorias">Categorias</Link>
-        <br/>
-        <Link to = "QuemSomos">Quem Somos</Link>
-        <br/>
-        <Link to = "FaleConosco">Fale Conosco</Link>
-        <br/>
-        <Link to = "Login">Login</Link>
+        <Nav className="justify-content-end" activeKey="/home">
+            <Nav.Item>
+                <Nav.Link href="/login">Login</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link href="/carrinho">Carrinho</Nav.Link>
+            </Nav.Item>
+        </Nav>
+        <Nav className="justify-content-end" activeKey="/home">
+            <Nav.Item>
+                <Nav.Link href="/home">Home</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link href="/explorar">Explorar</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link href="/categorias">Categorias</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link href="/QuemSomos">Quem somos</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link href="/faleconosco">Fale Conosco</Nav.Link>
+            </Nav.Item>
+        </Nav>
         </div>
     )
 }
