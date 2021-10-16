@@ -1,15 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Login.css"
 
 function Login() {
     return (
-        <div>
-             <h1>Login</h1>
+        <div className="base">
+            <div className="container">
+             <h1>Faça seu login</h1>
+             <input></input>
+             <input></input>
+             <button>Login</button>
+            </div>
         </div>
-
-        
-
     );
 }
 

@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1113px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.base {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
