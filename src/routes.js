@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import QuemSomos from "./pages/QuemSomos";
 import Carrinho from "./pages/Carrinho"
 import FaleConosco from "./pages/FaleConosco";
+import Cabecalho from "./pages/Cabecalho";
 
 //Rotas Dentro de Categorias
 import Sertanejo from "./pages/Categorias/Sertanejo";
@@ -36,6 +37,45 @@ function Routes() {
         <BrowserRouter>
             <Switch>
                 {/*ROTAS GERAIS*/}
+                <Route path = "/blog" component = {header} />
+                <Route path = "/cadastro" component = {header} />
+                <Route path = "/categorias" component = {header} />
+                <Route path = "/explorar" component = {header} />
+                <Route path = "/home" component = {header} />
+                <Route path = "/login" component = {header} />
+                <Route path = "/QuemSomos" component = {header} />
+                <Route path = "/carrinho" component = {header} />
+                <Route path = "/faleconosco" component = {header} />
+                <Route path = "/temp" component = {header} />
+
+                {/*ROTAS DENTRO DE CATEGORIAS*/}
+                <Route path = "/sertanejo" component = {header} />
+                <Route path = "/MPB" component = {header} />
+                <Route path = "/PagodeSamba" component = {header} />
+                <Route path = "/rock" component = {header} />
+                <Route path = "/funk" component = {header} />
+                <Route path = "/rap" component = {header} />
+                <Route path = "/eletronicas" component = {header} />
+                <Route path = "/POP" component = {header} />
+                <Route path = "/gospel" component = {header} />
+                <Route path = "/bluesjazz" component = {header} />
+                <Route path = "/reggae" component = {header} />
+                <Route path = "/classica" component = {header} />
+               
+
+                {/*ROTAS DENTRO DE CADASTRO*/}
+                <Route path = "/cadastroone" component = {header} />
+                
+            </Switch>
+        </BrowserRouter>
+    );
+}
+
+function header(){
+    return(
+        <Cabecalho>
+            <Switch>
+                {/*ROTAS GERAIS*/}
                 <Route path = "/blog" component = {Blog} />
                 <Route path = "/cadastro" component = {Cadastro} />
                 <Route path = "/categorias" component = {Categorias} />
@@ -45,6 +85,7 @@ function Routes() {
                 <Route path = "/QuemSomos" component = {QuemSomos} />
                 <Route path = "/carrinho" component = {Carrinho} />
                 <Route path = "/faleconosco" component = {FaleConosco} />
+                <Route path = "/temp" component = {Cabecalho} />
 
                 {/*ROTAS DENTRO DE CATEGORIAS*/}
                 <Route path = "/sertanejo" component = {Sertanejo} />
@@ -59,13 +100,13 @@ function Routes() {
                 <Route path = "/bluesjazz" component = {BluesJazz} />
                 <Route path = "/reggae" component = {Reggae} />
                 <Route path = "/classica" component = {Classica} />
+               
 
                 {/*ROTAS DENTRO DE CADASTRO*/}
                 <Route path = "/cadastroone" component = {CadastroOne} />
-                
             </Switch>
-        </BrowserRouter>
-    );
+        </Cabecalho>
+    )
 }
 
 export default Routes;

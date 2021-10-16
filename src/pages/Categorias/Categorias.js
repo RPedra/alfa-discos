@@ -5,19 +5,6 @@ function Categorias() {
     return (
         <div>
              <h1>Categorias</h1>
-    
-             <Link to = "Home"> Home </Link>
-             <br/>
-             <Link to = "Explorar">Explorar</Link>
-             <br/>
-             <Link to = "Categorias">Categorias</Link>
-             <br/>
-             <Link to = "QuemSomos">Quem Somos</Link>
-             <br/>
-             <Link to = "FaleConosco">Fale Conosco</Link>
-             <br/>
-             <Link to = "Login">Login</Link>
-             <br/>
         </div>
     );
 }
