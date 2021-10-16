@@ -1,12 +1,15 @@
 import React from "react";
 import {Form, Button} from "react-bootstrap";
 import "./Login.css";
-import { Link } from "react-router-dom";
+import Cabecalho from "../Cabecalho";
 
 
 function Login() {
     return (
         <div className="base">
+            <div className="justify-content-end">
+            <Cabecalho/>
+            </div>
             <div className="container">
              <h1>Faça seu login</h1>
              <Form>

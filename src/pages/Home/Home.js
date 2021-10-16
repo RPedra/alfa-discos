@@ -1,6 +1,7 @@
 import React from "react";
 import {useHistory} from "react-router-dom"
 import { Link } from "react-router-dom";
+import Cabecalho from "../Cabecalho";
 
 function Home() {
 
@@ -8,7 +9,9 @@ function Home() {
 
     return (
         <div>
+            <Cabecalho/>
          <h1>Home</h1>
+    
          <button 
             onClick = {() => {
                 history.push("Explorar") //history.goBack volta pra página anterior

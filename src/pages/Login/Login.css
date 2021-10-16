@@ -1,4 +1,17 @@
+.base {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
+.justify-content-end{
+    display: flex;
+    align-items: flex-end;
+}
+
 .container{
+    margin-top: 341px;
     display: flex;
     flex-direction: column;
     max-width: 1113px;
@@ -6,23 +19,15 @@
     flex-grow: 1;
 }
 
-.base {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: antiquewhite;
-}
-
 .inputs{
     display: flex;
     flex-direction: column;
+    width: 825px;
 }
 
 .buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 500px;
-    flex-grow: 1;
 }
+
