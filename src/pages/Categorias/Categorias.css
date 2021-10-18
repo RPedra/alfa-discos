@@ -1,0 +1,17 @@
+.all{
+    display: flex;
+    align-items: row;
+    background-color: antiquewhite;
+}
+
+.titulo {
+    display: flex;
+    width: 1112px;
+    height: 61px;
+    background-color: brown;
+}
+
+.categorias{
+    display: flex;
+    align-items: row;
+}
