@@ -21,8 +21,35 @@ function Categorias() {
                     </Card.Body>
                  </Card>
                 </div>
+                <div className="rock">
+                 <Card style={{ width: '328px', height: '377px', top: '269px', left: '162px'}}>
+                    <Card.Img variant="top" src="/images/rock.jpg" />
+                    <Card.Body>
+                        <Card.Title>Rock</Card.Title>
+                        <Button variant="bottom" >Ver CDs</Button>
+                    </Card.Body>
+                 </Card>
+                </div>
+                <div className="eletronica">
+                 <Card style={{ width: '328px', height: '377px', top: '321px', left: '162px'}}>
+                    <Card.Img variant="top" src="/images/eletronica.jpg" />
+                    <Card.Body>
+                        <Card.Title>Eletrônica</Card.Title>
+                        <Button variant="bottom" >Ver CDs</Button>
+                    </Card.Body>
+                 </Card>
+                </div>
+                <div className="blues">
+                 <Card style={{ width: '328px', height: '377px', top: '373px', left: '162px'}}>
+                    <Card.Img variant="top" src="/images/blues.jpg" />
+                    <Card.Body>
+                        <Card.Title>Blues / Jazz</Card.Title>
+                        <Button variant="bottom" >Ver CDs</Button>
+                    </Card.Body>
+                 </Card>
+                </div>
                 <div className="mpb">
-                 <Card style={{ width: '328px', height: '377px', left: '556px', top:'-160px'}}>
+                 <Card style={{ width: '328px', height: '377px', left: '556px', top:'0px'}}>
                     <Card.Img variant="top" src="/images/MPB.jpg" />
                     <Card.Body>
                         <Card.Title>MPB</Card.Title>
@@ -30,7 +57,7 @@ function Categorias() {
                     </Card.Body>
                  </Card>
                 </div><div className="pagode">
-                 <Card style={{ width: '328px', height: '377px', left: '950px', top:'-537px'}}>
+                 <Card style={{ width: '328px', height: '377px', left: '556px', top:'-500px'}}>
                     <Card.Img variant="top" src="/images/pandero.jpg" />
                     <Card.Body>
                         <Card.Title>Pagode/Samba</Card.Title>
