@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Form, Button} from "react-bootstrap";
+import {Form, Button, Card} from "react-bootstrap";
 import {useHistory} from "react-router-dom";
 import "./Login.css";
 import Cabecalho from "../Cabecalho";
@@ -25,19 +25,21 @@ function Login() {
             <Cabecalho/>
             </div>
             <div className="container">
-             <h1>Faça seu login</h1>
+                <img src ="/images/Login.png" alt="Login"/>
              <Form>
                 <div className="inputs">
                  <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control type="email" placeholder="e-mail" onChange={(e) => setEmail(e.target.value)}  />
+                     <Card.Title>E-mail</Card.Title>
+                     <Form.Control type="email" placeholder="Coloque seu e-mail" onChange={(e) => setEmail(e.target.value)}  />
                  </Form.Group>
                  <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control type="password" placeholder="senha" onChange={(e) => setSenha(e.target.value)}/>
-                </Form.Group>
+                     <Card.Title>Senha</Card.Title>
+                     <Form.Control type="password" placeholder="Coloque sua senha" onChange={(e) => setSenha(e.target.value)}/>
+                 </Form.Group>
                     <div className="buttons">
-                        <Button variant="danger" style={{width:'500px', height: '40px' }} onClick={login} >Login</Button>
+                        <Button variant="danger" style={{width:'300px', height: '40px' }} onClick={login} >Login</Button>
                         <br/>
-                        <Button variant="outline-danger" style={{width:'500px', height: '40px' }}>Não possui conta? Clique Aqui</Button>{' '}
+                        <Button variant="outline-danger" style={{width:'300px', height: '40px' }}>Não possui conta? Clique Aqui</Button>{' '}
                     </div>
                 </div>
              </Form>
