@@ -1,7 +1,8 @@
 import React from "react";
-import Carta from "../../Componentes/Carta"
+import Carta from "../../Componentes/Carta";
 import Cabecalho from "../Cabecalho";
 import { Card, Button } from "react-bootstrap";
+import "./Categorias.css";
 
 const cartas = [
     {
@@ -71,15 +72,24 @@ function Categorias() {
     <div className="pagina">
         <Cabecalho/>
         <div className="titulo">
-            <Card className="justify-content-center" style= {{backgroundColor: '#A31621', alignItems: 'center', width: '1156px', height: '50px', top: '170px', left: '142px'}} >
+            <Card className="justify-content-center" style= {{
+                backgroundColor: '#A31621', 
+                alignItems: 'center', 
+                width: '1156px', 
+                height: '50px', 
+                top: '170px', 
+                left: '120px',
+                boxShadow: '-4px 4px 5px 0px rgba(0,0,0,0.15)'
+                }}>
                 <Card.Title rounded style= {{color: 'white' }} >Categorias</Card.Title>
             </Card>
+            <div className= "cartaContainer">
+                {cartas.map((carta) => (
+                <Carta key={carta.id}  carta={carta}/>
+                ))}
+            </div>
         </div>
-        <div className= "cartaContainer">
-            {cartas.map((carta) => (
-            <Carta key={carta.id}  carta={carta}/>
-            ))}
-        </div>
+        
     </div>
     );
 }
