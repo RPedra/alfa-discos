@@ -74,16 +74,16 @@ function Categorias() {
         <div className="titulo">
             <Card className="justify-content-center" style= {{
                 backgroundColor: '#A31621', 
-                alignItems: 'center', 
-                width: '1156px', 
+                alignItems: 'center',
+                margin: '0 auto',
+                maxWidth: '1156px', 
                 height: '50px', 
                 top: '170px', 
-                left: '120px',
                 boxShadow: '-4px 4px 5px 0px rgba(0,0,0,0.15)'
                 }}>
                 <Card.Title rounded style= {{color: 'white' }} >Categorias</Card.Title>
             </Card>
-            <div className= "cartaContainer">
+            <div className= "cartaContainer" style={{margin: '0 auto',}} >
                 {cartas.map((carta) => (
                 <Carta key={carta.id}  carta={carta}/>
                 ))}

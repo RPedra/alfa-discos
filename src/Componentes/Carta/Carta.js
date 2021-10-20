@@ -8,9 +8,8 @@ function Carta({carta}){
             <Card style={{ 
                 width: '328px', 
                 height: '377px', 
-                top: '217px', 
-                left: '162px', 
-                right: '158px', 
+                top: '217px',
+                margin: '0 auto',  
                 boxShadow: '0px 4px 5px 0px rgba(0,0,0,0.25)',
                 borderRadius: '10px'
                 }}>
