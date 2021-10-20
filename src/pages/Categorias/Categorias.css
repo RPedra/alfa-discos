@@ -1,17 +1,15 @@
-.all{
-    display: flex;
-    align-items: row;
-    background-color: antiquewhite;
+.pagina{
+    background-color: #F1E9DB;
 }
 
-.titulo {
-    display: flex;
-    width: 1112px;
-    height: 61px;
-    background-color: brown;
+.titulo{
+    top: '170px';
+    width: '1156px';
 }
 
-.categorias{
-    display: flex;
-    align-items: row;
+.cartaContainer{
+    width: 1116px;
+    display: grid;
+    grid-row-gap: 52px;
+    grid-template-columns: repeat(3, minmax(170px,1fr));
 }
