@@ -7,7 +7,7 @@
 
 .justify-content-end{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .container{
@@ -23,7 +23,11 @@
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    width: 780px;
+}
+
+.formulario{
+    max-width: 850px;
+    width: auto;
 }
 
 .buttons{
