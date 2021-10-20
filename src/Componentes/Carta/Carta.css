@@ -1,8 +1,4 @@
-.pagina{
-    background-color: #F1E9DB;
-}
-
-.cartaContainer{
+.carta{
     width: 100%;
     display: grid;
     grid-column-gap: 20px;

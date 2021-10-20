@@ -1,72 +1,86 @@
 import React from "react";
+import Carta from "../../Componentes/Carta"
 import Cabecalho from "../Cabecalho";
 import { Card, Button } from "react-bootstrap";
 
+const cartas = [
+    {
+        id: 1,
+        titulo: "Sertanejo",
+        imagem: "/images/Sertanejo.jpg",
+    },
+    {
+        id: 2,
+        titulo: "Rock",
+        imagem: "/images/rock.jpg",
+    },
+    {
+        id: 3,
+        titulo: "Eletrônica",
+        imagem: "/images/eletronica.jpg",
+    },
+    {
+        id: 4,
+        titulo: "Blues / Jazz",
+        imagem: "/images/blues.jpg",  
+    },
+    {
+        id: 5,
+        titulo: "MPB",
+        imagem: "/images/MPB.jpg",  
+    },
+    {
+        id: 6,
+        titulo: "Funk",
+        imagem: "/images/funk.jpg",  
+    },
+    {
+        id: 7,
+        titulo: "POP",
+        imagem: "/images/pop.jfif",  
+    },
+    {
+        id: 8,
+        titulo: "Raggae",
+        imagem: "/images/raggae.jpg",  
+    },
+    {
+        id: 9,
+        titulo: "Pagode / Samba",
+        imagem: "/images/Pandero.jpg",  
+    },
+    {
+        id: 10,
+        titulo: "Rap",
+        imagem: "/images/rap.jpg",  
+    },
+    {
+        id: 11,
+        titulo: "Gospel",
+        imagem: "/images/gospel.jpg",  
+    },
+    {
+        id: 12,
+        titulo: "Clássica",
+        imagem: "/images/classica.jpg",  
+    },
+];
+
 function Categorias() {
     return (
-        <div className="base">
-            <Cabecalho/>
-            <div className="titulo">
+    <div className="pagina">
+        <Cabecalho/>
+        <div className="titulo">
             <Card className="justify-content-center" style= {{backgroundColor: '#A31621', alignItems: 'center', width: '1156px', height: '50px', top: '170px', left: '142px'}} >
                 <Card.Title rounded style= {{color: 'white' }} >Categorias</Card.Title>
             </Card>
-            </div>
-            <div className="categorias">
-                <div className="sertanejo">
-                 <Card style={{ width: '328px', height: '377px', top: '217px', left: '162px', }}>
-                    <Card.Img variant="top" src="/images/Sertanejo.jpg" />
-                    <Card.Body>
-                        <Card.Title>Sertanejo</Card.Title>
-                        <Button variant="bottom" >Ver CDs</Button>
-                    </Card.Body>
-                 </Card>
-                </div>
-                <div className="rock">
-                 <Card style={{ width: '328px', height: '377px', top: '269px', left: '162px'}}>
-                    <Card.Img variant="top" src="/images/rock.jpg" />
-                    <Card.Body>
-                        <Card.Title>Rock</Card.Title>
-                        <Button variant="bottom" >Ver CDs</Button>
-                    </Card.Body>
-                 </Card>
-                </div>
-                <div className="eletronica">
-                 <Card style={{ width: '328px', height: '377px', top: '321px', left: '162px'}}>
-                    <Card.Img variant="top" src="/images/eletronica.jpg" />
-                    <Card.Body>
-                        <Card.Title>Eletrônica</Card.Title>
-                        <Button variant="bottom" >Ver CDs</Button>
-                    </Card.Body>
-                 </Card>
-                </div>
-                <div className="blues">
-                 <Card style={{ width: '328px', height: '377px', top: '373px', left: '162px'}}>
-                    <Card.Img variant="top" src="/images/blues.jpg" />
-                    <Card.Body>
-                        <Card.Title>Blues / Jazz</Card.Title>
-                        <Button variant="bottom" >Ver CDs</Button>
-                    </Card.Body>
-                 </Card>
-                </div>
-                <div className="mpb">
-                 <Card style={{ width: '328px', height: '377px', left: '556px', top:'0px'}}>
-                    <Card.Img variant="top" src="/images/MPB.jpg" />
-                    <Card.Body>
-                        <Card.Title>MPB</Card.Title>
-                        <Button variant="bottom" >Ver CDs</Button>
-                    </Card.Body>
-                 </Card>
-                </div><div className="pagode">
-                 <Card style={{ width: '328px', height: '377px', left: '556px', top:'-500px'}}>
-                    <Card.Img variant="top" src="/images/pandero.jpg" />
-                    <Card.Body>
-                        <Card.Title>Pagode/Samba</Card.Title>
-                        <Button variant="bottom" >Ver CDs</Button>
-                    </Card.Body>
-                 </Card>
-                </div>
-            </div>
         </div>
+        <div className= "cartaContainer">
+            {cartas.map((carta) => (
+            <Carta key={carta.id}  carta={carta}/>
+            ))}
+        </div>
+    </div>
     );
 }
 
