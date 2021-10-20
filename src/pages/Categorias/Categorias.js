@@ -7,13 +7,13 @@ function Categorias() {
         <div className="base">
             <Cabecalho/>
             <div className="titulo">
-            <Card className="justify-content-center">
-                <Card.Title rounded>Categorias</Card.Title>
+            <Card className="justify-content-center" style= {{backgroundColor: '#A31621', alignItems: 'center', width: '1156px', height: '50px', top: '170px', left: '142px'}} >
+                <Card.Title rounded style= {{color: 'white' }} >Categorias</Card.Title>
             </Card>
             </div>
             <div className="categorias">
                 <div className="sertanejo">
-                 <Card style={{ width: '328px', height: '377px', top: '217px', left: '162px'}}>
+                 <Card style={{ width: '328px', height: '377px', top: '217px', left: '162px', }}>
                     <Card.Img variant="top" src="/images/Sertanejo.jpg" />
                     <Card.Body>
                         <Card.Title>Sertanejo</Card.Title>
