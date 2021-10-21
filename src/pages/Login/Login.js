@@ -38,17 +38,17 @@ function Login() {
                     <Card.Title style= {{color: 'white' }} >Login</Card.Title>
                 </Card>
                 </div>
-             <Form className="formulario">
-                 <br/><br/>
                 <div className="inputs" >
-                 <Form.Group className="mb-3" controlId="formBasicEmail" >
+                    <Form className="formulario">
+                    <br/><br/>               
+                    <Form.Group className="mb-3" controlId="formBasicEmail" >
                      <Card.Title>E-mail</Card.Title>
-                     <Form.Control type="email" placeholder="Coloque seu e-mail" onChange={(e) => setEmail(e.target.value)}  />
-                 </Form.Group>
-                 <Form.Group className="mb-3" controlId="formBasicPassword">
+                     <Form.Control type="email" placeholder="Insira seu e-mail" onChange={(e) => setEmail(e.target.value)}  />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
                      <Card.Title>Senha</Card.Title>
-                     <Form.Control type="password" placeholder="Coloque sua senha" onChange={(e) => setSenha(e.target.value)}/>
-                 </Form.Group>
+                     <Form.Control type="password" placeholder="Digite sua senha" onChange={(e) => setSenha(e.target.value)}/>
+                    </Form.Group>
                     <div className="buttons">
                         <Button style={{
                             maxWidth:'300px', 
@@ -60,8 +60,8 @@ function Login() {
                         <br/>
                         <Button variant="outline-danger" style={{width:'300px', height: '40px' }}>Não possui conta? Clique Aqui</Button>{' '}
                     </div>
+                    </Form>
                 </div>
-             </Form>
             </div>
         </div>
     );
