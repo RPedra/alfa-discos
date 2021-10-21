@@ -1,8 +1,10 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 import "./Carta.css";
 
 function Carta({carta}){
+    const history = useHistory();
     return(
         <div className="cartas">
             <Card style={{ 
@@ -20,7 +22,9 @@ function Carta({carta}){
                     <br/>
                     <br/>
                     <div className="botao">
-                    <Button variant="bottom" >Ver CDs</Button>
+                    <Button variant="bottom" onClick = {() => {
+                            history.push(carta.pagina) 
+                        }}>Ver CDs</Button>
                     </div>
                 </Card.Body>
             </Card>
