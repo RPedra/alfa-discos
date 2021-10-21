@@ -5,17 +5,29 @@
     background-color: #F1E9DB;
 }
 
-.lancamentosRecentes{
+.maisPopulares{
     display: flex;
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.Lancados{
+.Populares{
     width: 100%;
     position: center;
     justify-content: end;
     align-items: flex-start;
+}
+
+.cardTexto{
+    justify-content: end;
+    align-items: end;
+}
+
+.popularesContainer{
+    display: grid;
+    width: 100%;
+    flex-direction: row;
+    grid-template-columns: repeat(auto-fill, minmax(361px,1fr));
 }

@@ -1,0 +1,9 @@
+.corpo{
+    width: 100%;
+    display: flex;
+}
+.valor{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
