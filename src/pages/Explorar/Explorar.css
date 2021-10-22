@@ -27,7 +27,33 @@
 
 .popularesContainer{
     display: grid;
+    max-width: 1200px;
     width: 100%;
     flex-direction: row;
-    grid-template-columns: repeat(auto-fill, minmax(361px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+    grid-template-rows: 1;
+}
+
+.lancadosContainer{
+    display: grid;
+    max-width: 1200px;
+    width: 100%;
+    flex-direction: row;
+    grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+    grid-template-rows: 1;
+}
+
+.todosContainer{
+    display: grid;
+    max-width: 1200px;
+    width: 100%;
+    flex-direction: row;
+    grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+    grid-template-rows: 1;
+}
+
+.modalStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
