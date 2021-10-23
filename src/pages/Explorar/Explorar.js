@@ -49,21 +49,89 @@ const cds = [
     },
     {
         id: 5,
-        nome: "nome5",
-        artista: "artista4",
-        categoria: "mpb",
-        valor: '40,00',
-        popularidade: 9,
+        nome: "Thriller",
+        artista: "Michael Jackson",
+        categoria: "POP",
+        valor: '80,00',
+        popularidade: 9.7,
         data: "12/08/2019",
+        imagem: "/images/capaThriller.jpeg"
     },
     {
         id: 6,
-        nome: "nome6",
-        artista: "artista5",
-        categoria: "rock",
+        nome: "All WE HAVE IS N:OW",
+        artista: "Alok",
+        categoria: "eletronica",
         valor: '50,00',
-        popularidade: 8,
+        popularidade: 7,
         data: "12/12/2020",
+        imagem: "images/AlokAllWeHaveIsNow.jpg"
+    },
+    {
+
+        id: 7,
+        nome: "Legend",
+        artista: "Bob Marley",
+        categoria: "Reggae",
+        valor: '50,00',
+        popularidade: 7,
+        data: "12/12/2020",
+        imagem: "images/LegendBobMarley.jpg"
+    },
+    {
+
+        id: 8,
+        nome: "Essential",
+        artista: "Mozart",
+        categoria: "Classica",
+        valor: '50,00',
+        popularidade: 4,
+        data: "12/12/2020",
+        imagem: "images/EssentialMozart.jpg"
+    },
+    {
+
+        id: 9,
+        nome: "Bang",
+        artista: "Anitta",
+        categoria: "Funk",
+        valor: '50,00',
+        popularidade: 7,
+        data: "12/12/2020",
+        imagem: "images/BangAnitta.jpg"
+    },
+    {
+
+        id: 10,
+        nome: "Texas Flood",
+        artista: "Stevie Ray Vaughan",
+        categoria: "BluesJazz",
+        valor: '50,00',
+        popularidade: 7,
+        data: "12/12/2020",
+        imagem: "images/TexasFlood.jpg"
+    },
+    {
+
+        id: 11,
+        nome: "Ousadia & Alegria",
+        artista: "Thiaguinho",
+        categoria: "PagodeSamba",
+        valor: '50,00',
+        popularidade: 7,
+        data: "12/12/2020",
+        imagem: "images/OusadiaEAlegria.jpg"
+    },
+    {
+
+        id: 12,
+        nome: "Montero",
+        artista: "Lil Nas X",
+        categoria: "Rap",
+        valor: '50,00',
+        popularidade: 7,
+        data: "12/12/2020",
+        imagem: "images/MonteroLilNasX.png"
     },
 
 
