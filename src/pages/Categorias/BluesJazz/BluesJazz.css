@@ -5,11 +5,12 @@
     background-color: #F1E9DB;
 }
 
-.mpb{
+.BluesJazz{
     display: grid;
     max-width: 1156px;
     width: 100%;
     flex-direction: row;
     grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
     grid-template-rows: 1;
+
 }

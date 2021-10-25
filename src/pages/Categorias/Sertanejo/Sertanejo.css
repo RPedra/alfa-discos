@@ -1,4 +1,15 @@
 .pagina{
-    background-color: #fdf100;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F1E9DB;
 }
 
+.sertanejo{
+    display: grid;
+    max-width: 1156px;
+    width: 100%;
+    flex-direction: row;
+    grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+    grid-template-rows: 1;
+}

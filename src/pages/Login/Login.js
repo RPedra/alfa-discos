@@ -12,7 +12,7 @@ function Login() {
     const [senha, setSenha] = useState();
     const history = useHistory();
     function login(){
-        if(email == "abc@gmail.com" && senha === "123") {
+        if(email === "abc@gmail.com" && senha === "123") {
             alert ("Bem vindo!");
             history.push("home");
         }
