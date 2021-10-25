@@ -55,7 +55,7 @@ function Routes() {
                 <Route path = "/rock" component = {Rock} />
                 <Route path = "/funk" component = {Funk} />
                 <Route path = "/rap" component = {Rap} />
-                <Route path = "/eletronicas" component = {Eletronica} />
+                <Route path = "/eletronica" component = {Eletronica} />
                 <Route path = "/POP" component = {POP} />
                 <Route path = "/gospel" component = {Gospel} />
                 <Route path = "/bluesjazz" component = {BluesJazz} />
