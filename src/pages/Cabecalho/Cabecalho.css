@@ -1,4 +1,55 @@
 .header {
     display: flex;
     flex-direction: row;
+    background-color: rgba(26,20,35,0.80);
+    width: 100%;
+    justify-content: start;
+    padding-left: 63px;
+}
+
+.navBar{
+    width: 100%;
+    justify-content: end;
+}
+
+.perfil{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.paginas{
+    justify-content: end;
+    height: 94.38px;
+    align-content: end;
+}
+
+.gaveta{
+    display: none;
+    
+}
+
+.lista{
+    height: 100%;
+    width: 200px;
+    background-color: #236084;
+}
+
+.ListItemText{
+    color: white;
+    margin-left: 10px;
+}
+
+.toolBar{
+    background-color: #236084;
+}
+
+@media (max-width: 770px){
+    .header{
+        display: none;  
+    }
+
+    .gaveta{
+        display: flex;
+    }
 }
