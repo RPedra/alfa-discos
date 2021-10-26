@@ -273,9 +273,9 @@ function Cd({cd, onClick}){
                 width: '250px', 
                 height: '300px', 
                 top: '217px',
-                margin: '0 auto',  
+                margin: '1.5rem',  
                 boxShadow: '0px 4px 5px 0px rgba(0,0,0,0.25)',
-                borderRadius: '10px'
+                borderRadius: '10px',
                 }}>
                 <Card.Img variant="top" src={cd.imagem} style={{height: '185px', borderRadius: '10px 10px 0px 0px'}} />
                 <Card.Body className="corpo">

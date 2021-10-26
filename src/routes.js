@@ -30,6 +30,9 @@ import Classica from "./pages/Categorias/Classica";
 //Rotas dentro de cadastro
 import CadastroOne from "./pages/Cadastro/CadastroOne";
 
+//Rotas dentro de explorar
+import Todos from "./pages/Explorar/Todos";
+
 
 
 function Routes() {
@@ -65,6 +68,9 @@ function Routes() {
 
                 {/*ROTAS DENTRO DE CADASTRO*/}
                 <Route path = "/cadastroone" component = {CadastroOne} />
+
+                {/*ROTA DENTRO DE EXPLORAR*/}
+                <Route path = "/todos" component = {Todos} />
                 
             </Switch>
         </BrowserRouter>

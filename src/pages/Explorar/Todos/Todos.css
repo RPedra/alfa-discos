@@ -1,0 +1,23 @@
+.select {
+    width: 100%;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.List{
+    width: 250px;
+    display: flex;
+}
+
+.filtroText{
+    color: #1A1423;
+    margin-Left: 16px;
+}
+
+.Filtro{
+    margin: "auto";
+    align-items: center;
+    background-color: white;
+}
