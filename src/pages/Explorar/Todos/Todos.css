@@ -13,11 +13,23 @@
 
 .filtroText{
     color: #1A1423;
-    margin-Left: 16px;
+    text-align: center;
 }
 
-.Filtro{
+.filtro{
     margin: "auto";
     align-items: center;
     background-color: white;
+    top: 217px;
+    
 }
+
+.justify-content-center{
+    justify-content: flex-end;
+    top: 217px;
+}
+
+.justify-content{
+    top: 217px;
+}
+

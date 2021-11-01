@@ -59,20 +59,20 @@ function Todos() {
               cursor: "pointer",
             }}
           >
-            <Card.Title
+            <Card.Title className="filtroText"
               onClick={() => setVisible(!visible)}
               rounded
-              style={{ color: "#1A1423" }}
-            >
+              style={{ color: "#1A1423", align: "center"}}>
               Filtro
             </Card.Title>
           </Card>
           {visible && (
-            <div className="Filtro" style={{ display: "flex", width: "100%" }}>
+            <div className="filtro" style={{ display: "flex", width: "100%" }}>
               <Card.Title rounded style={{ color: "Black" }}>
                 Categorias
               </Card.Title>
-              <select name="categorias" id="categorias">
+              <br />
+              <select className="selectCategorias" name="categorias" id="categorias">
                 <option value="Sertanejo">Sertanejo</option>
                 <option value="Rock">Rock</option>
                 <option value="Eletronica">Eletrônica</option>
