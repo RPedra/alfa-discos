@@ -21,9 +21,7 @@ function Login() {
 
     return (
         <div className="base">
-            <div className="justify-content-end">
             <Cabecalho/>
-            </div>
             <div className="container">
                 <div className="titulo">
                 <Card className="justify-content-center" style= {{

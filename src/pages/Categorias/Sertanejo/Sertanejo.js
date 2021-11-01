@@ -40,13 +40,14 @@ function Sertanejo() {
                 boxShadow: '-4px 4px 5px 0px rgba(0,0,0,0.15)'
                 }}>
                     
-                <Card.Title rounded style= {{color: 'white' }} >Sertanejo</Card.Title>
-                </Card>
-                    <div className="sertanejo">
+                <Card.Title rounded style= {{color: 'white', position: 'fixed' }} >Sertanejo</Card.Title>
+                <div className="sertanejo">
                         {filter?.map((cd) => (
                             <Cd key={cds.id} cd={cd} onClick={handleClick} />
                         ))}
                     </div>
+                </Card>
+                   
             </div>
         
         </div>

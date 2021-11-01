@@ -63,7 +63,7 @@ function Cabecalho(props){
 ]
 
     return(
-    <div>
+    <div className="cabecalho">
      <div className="header">
         {props.children}
         <Image src="images/AlfaDiscos2.png" 
@@ -77,10 +77,21 @@ function Cabecalho(props){
         <div className="perfil">
         <Nav activeKey="/home">
             <Nav.Item>
-                <Nav.Link style={{color: 'white'}} href="/login">Login</Nav.Link>
+                {/* <IconContext.Provider value={{size: '1.3rem', color:'white'}}>
+                    <FaUserAlt />
+                </IconContext.Provider> */}
+                <Nav.Link style={{color: 'white'}} href="/login">
+                    <IconContext.Provider value={{size: '1.3rem', color:'white'}}>
+                        <FaUserAlt />
+                    </IconContext.Provider>
+                </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link style={{color: 'white'}} href="/carrinho">Carrinho</Nav.Link>
+                <Nav.Link style={{color: 'white'}} href="/carrinho">
+                    <IconContext.Provider value={{size: '1.3rem', color:'white'}}>
+                        <FaShoppingCart />
+                    </IconContext.Provider>
+                </Nav.Link>
             </Nav.Item>
         </Nav>
         </div>

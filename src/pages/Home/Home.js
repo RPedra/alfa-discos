@@ -24,13 +24,12 @@ function Home() {
                     width: 'max',
                     height: '100px',
                     fontWeight: '700',
-                    boxShadow: '-4px 4px 5px 0px rgba(0,0,0,0.15)'
+                    boxShadow: '2px 4px 5px 0px rgba(0,70,67,0.6)'
                     }}          
                         onClick = {() => {
                             history.push("Explorar") 
                         }}>Explore Nossos Produtos!
                 </Button>
-                <br />
                 <Button 
                     style={{backgroundColor:'#1A1423',
                     borderRadius: '10px', 
@@ -39,7 +38,7 @@ function Home() {
                     width: 'max',
                     height: '100px',
                     fontWeight: '700',
-                    boxShadow: '-4px 4px 5px 0px rgba(0,0,0,0.15)'
+                    boxShadow: '2px 4px 5px 0px rgba(0,70,67,0.6)'
                     }}
                         onClick = {() => {
                             history.push("FaleConosco") //history.goBack volta pra página anterior

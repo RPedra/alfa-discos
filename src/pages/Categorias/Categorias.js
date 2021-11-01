@@ -91,7 +91,7 @@ function Categorias() {
                 maxWidth: '1156px', 
                 height: '50px', 
                 top: '170px', 
-                boxShadow: '-4px 4px 5px 0px rgba(0,0,0,0.15)'
+                boxShadow: '-4px 4px 5px 0px rgba(26,20,35,0.15)'
                 }}>
                 <Card.Title rounded style= {{color: 'white' }} >Categorias</Card.Title>
             </Card>
