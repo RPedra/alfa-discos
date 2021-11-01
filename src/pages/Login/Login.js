@@ -3,6 +3,7 @@ import {Form, Button, Card} from "react-bootstrap";
 import {useHistory} from "react-router-dom";
 import "./Login.css";
 import Cabecalho from "../Cabecalho";
+import Rodape from "../Rodape";
 
 
 
@@ -20,7 +21,7 @@ function Login() {
     }
 
     return (
-        <div className="base">
+        <div className="login">
             <Cabecalho/>
             <div className="container">
                 <div className="titulo">
@@ -61,6 +62,7 @@ function Login() {
                     </Form>
                 </div>
             </div>
+            <Rodape />
         </div>
     );
 }

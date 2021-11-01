@@ -3,6 +3,7 @@ import {useHistory} from "react-router-dom";
 import {Button} from "@material-ui/core";
 import {Carousel} from "react-bootstrap";
 import Cabecalho from "../Cabecalho";
+import Rodape from "../Rodape";
 import "./Home.css";
 
 
@@ -89,6 +90,7 @@ function Home() {
             </Carousel.Item>
          </Carousel>
         </div>
+     <Rodape />    
     </div>
     );
 }
