@@ -23,5 +23,11 @@
     grid-row-gap: 52px;
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(361px,1fr));
+}
 
+.footer{
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }

@@ -102,7 +102,9 @@ function Categorias() {
                 ))}
             </div>
         </div>
+        <div className="footer">
         <Rodape />
+        </div>
     </div>    
     );
 }
