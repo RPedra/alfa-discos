@@ -84,14 +84,13 @@ function Categorias() {
     return (
     <div className="categorias">
         <Cabecalho/>
-        <div className="titulo">
+        <div className="categoriasTitulo">
             <Card className="justify-content-center" style= {{
                 backgroundColor: '#A31621', 
                 alignItems: 'center',
-                margin: '0 auto',
+                margin: '10 auto 0 auto',
                 maxWidth: '1156px', 
                 height: '50px', 
-                top: '170px', 
                 boxShadow: '-4px 4px 5px 0px rgba(26,20,35,0.15)'
                 }}>
                 <Card.Title rounded style= {{color: 'white' }} >Categorias</Card.Title>

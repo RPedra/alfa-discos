@@ -10,12 +10,11 @@ function Carta({carta}){
             <Card style={{ 
                 width: '328px', 
                 height: '377px', 
-                top: '200px',
                 margin: '0 auto',  
                 boxShadow: '0px 4px 5px 0px rgba(0,0,0,0.25)',
                 borderRadius: '10px'
                 }}>
-                <Card.Img variant="top" src={carta.imagem} style={{height: '215px', borderRadius: '10px 10px 0px 0px'}} />
+                <Card.Img variant="top" src={carta.imagem} style={{height: '200px', borderRadius: '10px 10px 0px 0px'}} />
                 <Card.Body>
                     <Card.Title>{carta.titulo}</Card.Title>
                     <br/>

@@ -14,17 +14,18 @@ function Home() {
 
     return (
     <div className="home">
+        
         <div className="imagem">
             <Cabecalho/>
-            <div className="buttons" style={{boxShadow: 'box-shadow: inset 0px 10px 20px -9px rgba(0,0,0,0.39)'}}>  
+            <div className="homeButtons">  
                 <Button 
                     style={{backgroundColor:'#1A1423',
                     borderRadius: '10px', 
                     color: 'white',
-                    maxWidth: '80%',
-                    width: 'max',
-                    height: '100px',
+                    Width: '100%',
+                    height: '20vh',
                     fontWeight: '700',
+                    fontSize: '4vh',
                     boxShadow: '2px 4px 5px 0px rgba(0,70,67,0.6)'
                     }}          
                         onClick = {() => {
@@ -35,8 +36,7 @@ function Home() {
                     style={{backgroundColor:'#1A1423',
                     borderRadius: '10px', 
                     color: 'white',
-                    maxWidth: '80%',
-                    width: 'max',
+                    maxWidth: '70%',
                     height: '100px',
                     fontWeight: '700',
                     boxShadow: '2px 4px 5px 0px rgba(0,70,67,0.6)'
@@ -48,7 +48,7 @@ function Home() {
             </div>  
         </div>
         <div className="carrossel">
-         <Carousel variant="dark" style={{width:'500px'}}>
+         <Carousel variant="dark">
             <Carousel.Item className="item">
                 <img
                 style={{justifyContent: 'center'}}

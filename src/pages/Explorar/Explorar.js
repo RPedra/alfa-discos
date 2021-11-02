@@ -31,8 +31,9 @@ function Explorar() {
 
   return (
     <>
+      <Cabecalho />
       <div className="pagina">
-        <Cabecalho />
+        
         <Card
           className="justify-content-center"
           style={{
