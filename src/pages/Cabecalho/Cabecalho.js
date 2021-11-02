@@ -62,9 +62,18 @@ function Cabecalho(props){
         
 ]
 
+    const users = [
+        {
+            id: 1,
+            nome: "Bernardo Maia",
+            endereco: "Rua Borba Gato, 36",
+            imagem: "/images/SemPerfil.jpg",
+        }
+    ]
+
     return(
-    <div className="cabecalho">
-     <div className="header">
+   <div className="cabecalho">
+    <div className="header">
         {props.children}
         <Image src="images/AlfaDiscos2.png" 
         style={{
@@ -77,9 +86,6 @@ function Cabecalho(props){
         <div className="perfil">
         <Nav activeKey="/home">
             <Nav.Item>
-                {/* <IconContext.Provider value={{size: '1.3rem', color:'white'}}>
-                    <FaUserAlt />
-                </IconContext.Provider> */}
                 <Nav.Link style={{color: 'white'}} href="/login">
                     <IconContext.Provider value={{size: '1.3rem', color:'white'}}>
                         <FaUserAlt />
@@ -94,7 +100,7 @@ function Cabecalho(props){
                 </Nav.Link>
             </Nav.Item>
         </Nav>
-        </div>
+    </div>
          <Nav className="paginas" activeKey="/home">
             <Nav.Item>
                 <Nav.Link style={{color: 'white'}} href="/home">Home</Nav.Link>
@@ -154,7 +160,7 @@ function Cabecalho(props){
             </List>
         </Drawer>
      </div>
-    </div>
+   </div>
     )
 }
 

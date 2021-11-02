@@ -1,5 +1,10 @@
-.pagina{
+.categorias{
+    width: 100%;
+    height: 100%;
     background-color: #F1E9DB;
+    height: max-content;
+    min-height:100%;
+    position: relative;
 }
 
 .titulo{
@@ -7,9 +12,22 @@
 }
 
 .cartaContainer{
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    outline: 0;
     max-width: 1156px;
+    height: min-content;
     display: grid;
     grid-row-gap: 52px;
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(361px,1fr));
+}
+
+.footer{
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }

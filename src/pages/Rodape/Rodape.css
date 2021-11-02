@@ -1,0 +1,29 @@
+.rodape{
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom:0;
+    background-color: rgba(26,20,35,0.80);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-family: 'Abhaya Libre', serif;
+    color: white;
+}
+
+.informacoes{
+    max-width: 500px;
+}
+
+.icones{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 850px){
+    .rodape{
+        display: none;
+    }
+}

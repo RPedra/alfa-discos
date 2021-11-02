@@ -1,6 +1,7 @@
 import React from "react";
 import Carta from "../../Componentes/Carta";
 import Cabecalho from "../Cabecalho";
+import Rodape from "../Rodape";
 import { Card, Button } from "react-bootstrap";
 import "./Categorias.css";
 
@@ -81,7 +82,7 @@ const cartas = [
 
 function Categorias() {
     return (
-    <div className="pagina">
+    <div className="categorias">
         <Cabecalho/>
         <div className="titulo">
             <Card className="justify-content-center" style= {{
@@ -101,8 +102,10 @@ function Categorias() {
                 ))}
             </div>
         </div>
-        
-    </div>
+        <div className="footer">
+        <Rodape />
+        </div>
+    </div>    
     );
 }
 

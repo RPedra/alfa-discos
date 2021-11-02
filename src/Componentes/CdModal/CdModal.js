@@ -1,7 +1,6 @@
 import React from "react";
 import "./CdModal.css";
 import {Button, Image} from "react-bootstrap";
-import { fontWeight } from "@material-ui/system";
 
 function CdModal({cd}){
     return (
