@@ -27,19 +27,10 @@ function Sertanejo() {
   }
   return (
     <>
-      <div className="pagina">
+      <div className="pagina_Sertanejo">
         <Cabecalho />
-        <div className="titulo">
-          <div
-            className="justify-content-center"
-            style={{
-              alignItems: "center",
-              margin: "0 auto",
-              maxWidth: "1156px",
-              width: "100%",
-              top: "170px",
-            }}
-          >
+        <div className="titulo_Sertanejo">
+          <div className="justify-content-center-Sertanejo">
             <Card.Title
               rounded
               style={{
