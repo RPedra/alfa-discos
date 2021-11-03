@@ -8,6 +8,7 @@ function Rodape (props){
     return(
         <div className="rodape">
             <div className="informacoes">
+                <br/>
                 <h1 style={{fontSize:'1.8rem'}}>Endereço:</h1>
                 <h2 style={{fontSize:'1.2rem'}}>Rua Antônio Silva, 44. Pitiringa, BH-MG</h2>
                 <div className="icones">

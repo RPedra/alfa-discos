@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import Cabecalho from "../../Cabecalho";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import Cd from "../../../Componentes/cd";
 import { cds } from "../../../Componentes/cd/cd";
 import "./Todos.css";
 import { Modal } from "@material-ui/core";
 import CdModal from "../../../Componentes/CdModal";
 import { useHistory } from "react-router-dom";
-import { BsFilterLeft } from "react-icons/bs";
-import { IconContext } from "react-icons/lib";
+
 
 function Todos() {
   const [visible, setVisible] = useState(false);
@@ -40,13 +39,13 @@ function Todos() {
           }}
         >
           <Card.Title rounded style={{ color: "white" }}>
-            Todos
+            Explorar
           </Card.Title>
         </Card>
         <br />
 
         <div className="select">
-          <Card
+          <div
             className="justify-content"
             style={{
               backgroundColor: "#FFF9EF",
@@ -59,57 +58,67 @@ function Todos() {
               cursor: "pointer",
             }}
           >
-            <Card.Title className="filtroText"
+            <Card.Title
+              className="filtroText"
               onClick={() => setVisible(!visible)}
               rounded
-              style={{ color: "#1A1423", align: "center"}}>
+              style={{ color: "#1A1423", align: "center" }}
+            >
               Filtro
             </Card.Title>
-          </Card>
+          </div>
           {visible && (
-            <div className="filtro" style={{ display: "flex", width: "100%" }}>
-              <Card.Title rounded style={{ color: "Black" }}>
-                Categorias
-              </Card.Title>
-              <br />
-              <select className="selectCategorias" name="categorias" id="categorias">
-                <option value="Sertanejo">Sertanejo</option>
-                <option value="Rock">Rock</option>
-                <option value="Eletronica">Eletrônica</option>
-                <option value="BluesJazz">Blues e Jazz</option>
-                <option value="MPB">MPB</option>
-                <option value="Funk">Funk</option>
-                <option value="POP">POP</option>
-                <option value="Reggae">Reggae</option>
-                <option value="PagodeSamba">Pagode e Samba</option>
-                <option value="Rap">Rap</option>
-                <option value="Gospel">Gospel</option>
-                <option value="Classica">Clássica</option>
-              </select>
-
-              <Card.Title rounded style={{ color: "Black" }}>
-                Preço
-              </Card.Title>
-              <select name="price" id="price">
-                <option value="BiggerPrice">Maior para menor</option>
-                <option value="LowerPrice">Menor para maior</option>
-              </select>
-
-              <Card.Title rounded style={{ color: "Black" }}>
-                Lançamento
-              </Card.Title>
-              <select name="time" id="time">
-                <option value="Old">Mais novos</option>
-                <option value="New">Mais antigos</option>
-              </select>
-
-              <Card.Title rounded style={{ color: "Black" }}>
-                Mais vendidos
-              </Card.Title>
-              <select name="famous" id="famous">
-                <option value="MoreF">Mais vendidos</option>
-                <option value="LessF">Menos vendidos</option>
-              </select>
+            <div className="filtro" style={{ display: "flex", width: "1156px",}}>
+              <div className="filterInput">
+                <Card.Title rounded style={{ color: "Black" }}>
+                  Categorias
+                </Card.Title>
+                <select
+                  className="selectCategorias"
+                  name="categorias"
+                  id="categorias"
+                >
+                  <option value="Sertanejo">Sertanejo</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Eletronica">Eletrônica</option>
+                  <option value="BluesJazz">Blues e Jazz</option>
+                  <option value="MPB">MPB</option>
+                  <option value="Funk">Funk</option>
+                  <option value="POP">POP</option>
+                  <option value="Reggae">Reggae</option>
+                  <option value="PagodeSamba">Pagode e Samba</option>
+                  <option value="Rap">Rap</option>
+                  <option value="Gospel">Gospel</option>
+                  <option value="Classica">Clássica</option>
+                </select>
+              </div>
+              <div className="filterInput">
+                <Card.Title rounded style={{ color: "Black" }}>
+                  Preço
+                </Card.Title>
+                <select name="price" id="price">
+                  <option value="BiggerPrice">Maior para menor</option>
+                  <option value="LowerPrice">Menor para maior</option>
+                </select>
+              </div>
+              <div className="filterInput">
+                <Card.Title rounded style={{ color: "Black" }}>
+                  Lançamento
+                </Card.Title>
+                <select name="time" id="time">
+                  <option value="Old">Novos</option>
+                  <option value="New">Antigos</option>
+                </select>
+              </div>
+              <div className="filterInput">
+                <Card.Title rounded style={{ color: "Black" }}>
+                  Mais vendidos
+                </Card.Title>
+                <select name="famous" id="famous">
+                  <option value="MoreF">Mais vendidos</option>
+                  <option value="LessF">Menos vendidos</option>
+                </select>
+              </div>
             </div>
           )}
         </div>

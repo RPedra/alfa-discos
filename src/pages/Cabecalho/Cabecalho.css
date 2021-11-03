@@ -1,9 +1,12 @@
 .cabecalho{
     height: 150px;
     font-family: 'Abhaya Libre', serif;
+    margin-bottom: 50px;
+}
+.card {
+    position: inherit !important;
 }
 .header {
-    position: absolute;
     display: flex;
     flex-direction: row;
     background-color: rgba(26,20,35,0.80);

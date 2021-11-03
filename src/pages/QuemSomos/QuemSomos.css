@@ -1,0 +1,38 @@
+.QuemSomos{
+    width: 100%;
+    background-color: #F1E9DB;
+    height: max-content;
+    justify-content: center;
+}
+
+.QuemSomosTitulo{
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.justify-content-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer{
+    /* display: none; */
+    width: 100%;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+.texto{
+    margin-top: 50px;
+    width: 1157px;
+    justify-content: center;
+    font-family: 'Abhaya Libre',;
+}
+
+.alinhamento{
+    align-self: center;
+}

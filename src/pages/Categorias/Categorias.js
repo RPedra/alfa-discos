@@ -84,6 +84,7 @@ function Categorias() {
     return (
     <div className="categorias">
         <Cabecalho/>
+        <div className = "alinhamento">
         <div className="categoriasTitulo">
             <Card className="justify-content-center" style= {{
                 backgroundColor: '#A31621', 
@@ -99,6 +100,7 @@ function Categorias() {
                 {cartas.map((carta) => (
                 <Carta key={carta.id}  carta={carta}/>
                 ))}
+            </div>
             </div>
         </div>
         <div className="footer">

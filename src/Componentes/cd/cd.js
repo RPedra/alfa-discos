@@ -262,6 +262,17 @@ export const cds = [
         data: "12/12/2020",
         imagem: "images/AndreaBocelliSI.jpg"
     },
+
+    {
+    id: 25,
+        nome: "Bad",
+        artista: "Michael Jackson",
+        categoria: "POP",
+        valor: '150,00',
+        popularidade: 4,
+        data: "12/12/1987",
+        imagem: "images/Michael_Jackson_Bad.png"
+    },
     
 ]
 

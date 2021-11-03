@@ -50,6 +50,7 @@
     flex-direction: row;
     grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
     grid-template-rows: 1;
+    background-color: #F1E9DB;
 }
 
 .modalStyle{
@@ -60,4 +61,9 @@
 
 .Navtodos{
     color-adjust: #1a1a1a;
+}
+
+.select{
+    display: flex;
+    justify-content: center;
 }
