@@ -3,6 +3,7 @@
     background-color: #F1E9DB;
     height: max-content;
     justify-content: center;
+    display: flex;
 }
 
 .QuemSomosTitulo{
@@ -35,4 +36,9 @@
 
 .alinhamento{
     align-self: center;
+}
+
+.QSButton{
+    margin-top: 50px;
+    
 }
