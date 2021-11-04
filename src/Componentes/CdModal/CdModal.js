@@ -20,7 +20,7 @@ function CdModal({cd}){
                 
                 boxShadow: '-4px 4px 5px 0px rgba(0,0,0,0.15)',               
              }} >Adicionar ao Carrinho</Button>
-             <Button className="artista" variant="outline-dark" style={{width:'100px'}}>Ver artista</Button>
+             {/* <Button className="artista" variant="outline-dark" style={{width:'100px'}}>Ver artista</Button> */}
         </div>
         </div>
     </div>

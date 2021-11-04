@@ -15,16 +15,16 @@
     background-attachment: fixed;
     background-size: 100%;
     background-position: center;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    justify-self: center;
     
 }
 .homeButtons{
     height: auto;
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px,auto));
     justify-content: space-around;
-    justify-items: center;
     justify-self: center;
     font-family: 'Abhaya Libre', serif;
 }

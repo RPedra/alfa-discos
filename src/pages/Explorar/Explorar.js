@@ -7,6 +7,8 @@ import "./Explorar.css";
 import { Modal } from "@material-ui/core";
 import CdModal from "../../Componentes/CdModal";
 import { useHistory } from "react-router-dom";
+import { IconContext } from "react-icons/lib";
+import {FaSlidersH} from "react-icons/fa";
 import Rodape from "../Rodape";
 
 function Explorar() {
@@ -23,34 +25,28 @@ function Explorar() {
   }
 
   return (
-    <>
-      <div className="pagina">
+      <div className="explorar">
         <Cabecalho />
-        <div
-          className="justify-content-center"
-          style={{
-            backgroundColor: "#A31621",
-            alignItems: "center",
-            margin: "0 auto",
-            maxWidth: "1156px",
-            width: "100%",
-            height: "50px",
-            boxShadow: "-4px 4px 5px 0px rgba(0,0,0,0.15)",
-          }}
-        >
-          <Card.Title rounded style={{ color: "white" }}>
-            Explorar
-          </Card.Title>
-        </div>
-        <br />
-
-        <div className="select">
+        <div className="explorarCorpo">
+         <Card style= {{
+            backgroundColor: '#A31621', 
+            alignItems: 'center',
+            justifyContent: 'center',
+            margin: '0 auto',
+            maxWidth: '1200px', 
+            height: '50px', 
+            boxShadow: '-4px 4px 5px 0px rgba(26,20,35,0.15)'
+            }}>
+            <Card.Title rounded style= {{color: 'white' }} >Explorar</Card.Title>
+         </Card>
+         <br />
+         <div className="select">
           <Card
-            className="justify-content"
             style={{
-              backgroundColor: "#FFF9EF",
+              backgroundColor: "#236084",
               alignItems: "center",
-              margin: "0 auto",
+              justifyContent: "center",
+              margin: '0 auto',
               maxWidth: "300px",
               width: "100%",
               height: "50px",
@@ -62,16 +58,15 @@ function Explorar() {
               className="filtroText"
               onClick={() => setVisible(!visible)}
               rounded
-              style={{ color: "#1A1423", align: "center" }}
+              style={{ color: "white", align: "center" }}
             >
-              Filtro
+              <IconContext.Provider value={{size: '1.3rem', color:'white'}}>
+                        <FaSlidersH />Filtro
+                    </IconContext.Provider>
             </Card.Title>
           </Card>
           {visible && (
-            <div
-              className="filtro"
-              style={{ display: "flex", width: "1156px" }}
-            >
+            <div className="filtro">
               <div className="filterInput">
                 <Card.Title rounded style={{ color: "Black" }}>
                   Categorias
@@ -124,22 +119,20 @@ function Explorar() {
               </div>
             </div>
           )}
+         </div>
+          <div className="todosContainer" style={{ margin: "0 auto" }}>
+            {cds.map((cd) => (
+              <Cd key={cds.id} cd={cd} onClick={handleClick} />
+            ))}
+          </div>
         </div>
-
-        <div className="todosContainer" style={{ margin: "0 auto" }}>
-          {cds.map((cd) => (
-            <Cd key={cds.id} cd={cd} onClick={handleClick} />
-          ))}
-        </div>
-
-        <Modal open={viewCd} onClose={handleClose} className="modalStyle">
-          <CdModal cd={viewCd} />
-        </Modal>
         <div className="footer">
         <Rodape />
         </div>
+        <Modal open={viewCd} onClose={handleClose} className="modalStyle">
+          <CdModal cd={viewCd} />
+        </Modal>
       </div>
-    </>
   );
 }
 
