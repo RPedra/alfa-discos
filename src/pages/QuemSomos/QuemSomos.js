@@ -58,25 +58,6 @@ function QuemSomos() {
             nossos usuários e parceiros.
           </h1>
         </div>
-        <div className="QSButton">
-          <Button
-            style={{
-              backgroundColor: "#1A1423",
-              borderRadius: "10px",
-              color: "white",
-              Width: "100%",
-              height: "10vh",
-              fontWeight: "700",
-              fontSize: "2.5vh",
-              boxShadow: "2px 4px 5px 0px rgba(0,70,67,0.6)",
-            }}
-            onClick={() => {
-              history.push("Explorar");
-            }}
-          >
-            Explore Nossos Produtos!
-          </Button>
-        </div>
       </div>
       <div className="footer">
         <Rodape />
