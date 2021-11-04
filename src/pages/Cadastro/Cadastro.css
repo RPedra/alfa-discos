@@ -1,25 +1,27 @@
-.loginPagina {
+.cadastroPagina{
     height: max-content;
     background-color: #F1E9DB;
 }
 
-.loginCorpo{
+.cadastroCorpo{
     padding-bottom: 50px;
     padding-right: 20px;
     padding-left: 20px;
 }
 
-.loginFormulario{
+.cadastroFormulario{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.loginButtons{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    min-width: 200px;
-    row-gap: 10px;
+.mb-3{
+    width: 100% !important;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
+.cadastroButtons{
+    width: 60%;
+    min-width: 200px;
+}

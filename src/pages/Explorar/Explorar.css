@@ -1,5 +1,5 @@
 .explorar{
-    height: 100%;
+    height: max-content;
     display: flex;
     flex-direction: column;
     background-color: #F1E9DB;
@@ -37,9 +37,24 @@
     color-adjust: #1a1a1a;
 }
 
-.select{
-    display: flex;
+.select {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+.filtro{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px,2fr));
+    width: 100%;
+    padding-top: 10px;
+}
+
+.filterInput{
+    width: 100%;
 }
 
 @media (max-width: 850px){

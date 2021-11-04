@@ -46,6 +46,7 @@ function Explorar() {
               backgroundColor: "#236084",
               alignItems: "center",
               justifyContent: "center",
+              margin: '0 auto',
               maxWidth: "300px",
               width: "100%",
               height: "50px",
@@ -60,15 +61,12 @@ function Explorar() {
               style={{ color: "white", align: "center" }}
             >
               <IconContext.Provider value={{size: '1.3rem', color:'white'}}>
-                        <FaSlidersH /> Filtro
+                        <FaSlidersH />Filtro
                     </IconContext.Provider>
             </Card.Title>
           </Card>
           {visible && (
-            <div
-              className="filtro"
-              style={{ display: "flex", width: "1156px" }}
-            >
+            <div className="filtro">
               <div className="filterInput">
                 <Card.Title rounded style={{ color: "Black" }}>
                   Categorias
