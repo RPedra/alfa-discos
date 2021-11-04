@@ -2,7 +2,6 @@ import React from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom"
 
 //Rotas Gerais
-import Blog from "./pages/Blog";
 import Cadastro from "./pages/Cadastro";
 import Categorias from "./pages/Categorias";
 import Explorar from "./pages/Explorar";
@@ -40,7 +39,6 @@ function Routes() {
         <BrowserRouter>
             <Switch>
                 {/*ROTAS GERAIS*/}
-                <Route path = "/blog" component = {Blog} />
                 <Route path = "/cadastro" component = {Cadastro} />
                 <Route path = "/categorias" component = {Categorias} />
                 <Route path = "/explorar" component = {Explorar} />

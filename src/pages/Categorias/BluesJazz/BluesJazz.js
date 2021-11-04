@@ -26,10 +26,10 @@ function BluesJazz() {
     }
     return (
     <>
-        <div className="pagina">
+        <div className="pagina-BluesJazz">
             <Cabecalho/>
             <div className="titulo">
-                <Card className="justify-content-center" style= {{
+                <Card className="justify-content-center-BluesJazz" style= {{
                 backgroundColor: '#A31621', 
                 alignItems: 'center',
                 margin: '0 auto',

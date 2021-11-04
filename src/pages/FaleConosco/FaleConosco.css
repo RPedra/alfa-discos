@@ -1,0 +1,20 @@
+.FaleConosco-pagina{
+    background-color: #F1E9DB;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.FaleConosco-Titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SuaMensagem{
+    margin-bottom: 50px;
+    max-width: 1000px;
+    
+}

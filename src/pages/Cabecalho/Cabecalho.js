@@ -101,7 +101,7 @@ function Cabecalho(props){
             </Nav.Item>
         </Nav>
     </div>
-         <Nav className="paginas" activeKey="/home">
+         <Nav className="paginas-Cabecalho" activeKey="/home">
             <Nav.Item>
                 <Nav.Link style={{color: 'white'}} href="/home">Home</Nav.Link>
             </Nav.Item>
