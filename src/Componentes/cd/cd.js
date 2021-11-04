@@ -282,9 +282,7 @@ function Cd({cd, onClick}){
         <div className="cds" onClick={() => onClick(cd)}>
             <Card style={{ 
                 width: '250px', 
-                height: '300px', 
-                top: '217px',
-                margin: '1.5rem',  
+                height: '300px',  
                 boxShadow: '0px 4px 5px 0px rgba(0,0,0,0.25)',
                 borderRadius: '10px',
                 }}>

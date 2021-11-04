@@ -1,18 +1,20 @@
 .categorias{
     width: 100%;
     background-color: #F1E9DB;
-    height: max-content;
-    
+    height: max-content; 
 }
     
-.categoriasTitulo{
-    width: 1157px;
+.categoriasCorpo{
+    width: 100%;
     margin-top: 50px;
     padding-bottom: 50px;
+    align-items: center;
+    align-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .cartaContainer{
-    /* position: relative; */
     padding-top: 20px;
     max-width: 1156px;
     height: max-content;
@@ -30,10 +32,4 @@
 
 .card{
     position: static !important;
-}
-
-.justify-content-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

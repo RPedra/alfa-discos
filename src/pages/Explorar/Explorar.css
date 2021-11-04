@@ -1,23 +1,8 @@
-.pagina{
+.explorar{
     height: 100%;
     display: flex;
     flex-direction: column;
     background-color: #F1E9DB;
-}
-
-.maisPopulares{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.Populares{
-    width: 100%;
-    position: center;
-    justify-content: end;
-    align-items: flex-start;
 }
 
 .cardTexto{
@@ -25,31 +10,20 @@
     align-items: end;
 }
 
-.popularesContainer{
-    display: grid;
-    max-width: 1200px;
-    width: 100%;
-    flex-direction: row;
-    grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
-    grid-template-rows: 1;
-}
-
-.lancadosContainer{
-    display: grid;
-    max-width: 1200px;
-    width: 100%;
-    flex-direction: row;
-    grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
-    grid-template-rows: 1;
+.explorarCorpo{
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .todosContainer{
     display: grid;
     max-width: 1200px;
     width: 100%;
-    flex-direction: row;
+    padding-top: 30px;
+    justify-items: center;
     grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
     grid-template-rows: 1;
+    row-gap: 30px;
     background-color: #F1E9DB;
 }
 
@@ -66,4 +40,10 @@
 .select{
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 850px){
+.explorarCorpo{
+    padding-top: 40px;
+}
 }

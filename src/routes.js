@@ -42,7 +42,7 @@ function Routes() {
                 <Route path = "/cadastro" component = {Cadastro} />
                 <Route path = "/categorias" component = {Categorias} />
                 <Route path = "/explorar" component = {Explorar} />
-                <Route path = "/" component = {Home} />
+                <Route path = "/home" component = {Home} />
                 <Route path = "/login" component = {Login} />
                 <Route path = "/QuemSomos" component = {QuemSomos} />
                 <Route path = "/carrinho" component = {Carrinho} />
