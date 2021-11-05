@@ -17,6 +17,7 @@
 
 .mb-3{
     width: 100% !important;
+    max-width: 1150px;
     padding-right: 25px;
     padding-left: 25px;
 }
