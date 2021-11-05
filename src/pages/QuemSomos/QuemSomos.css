@@ -2,17 +2,7 @@
     width: 100%;
     background-color: #F1E9DB;
     height: max-content;
-    justify-content: center;
-    
-    
-}
-
-.justify-content-center-quemsomos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
+    padding-bottom: 30px;
 }
 
 .alinhamento-quemsomos{
@@ -23,21 +13,35 @@
 }
 
 .footer{
-    /* display: none; */
     width: 100%;
     bottom: 0;
     margin-top: 50px;
 }
 
 .texto-quemsomos{
+    display: flex;
+    flex-direction: column;
     margin-top: 50px;
-    width: 1100px;
-    font-family: 'Abhaya Libre',;
-    
-    
+    max-width: 1000px;
+    min-width: 300px;
+    max-height: 400px;
+    overflow: scroll;
+    justify-content: center;
+    font-family: 'Abhaya Libre';
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;     
 }
 
 .alinhamento-quemsomos{
     align-self: center;
+}
+
+@media (max-width: 400px){
+    .texto-quemsomos{
+        font-size: 2px;
+    }
+    
 }
 

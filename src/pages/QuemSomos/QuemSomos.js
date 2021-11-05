@@ -10,10 +10,10 @@ function QuemSomos() {
     <div className="pagina-quemsomos">
       <Cabecalho />
       <div className="alinhamento-quemsomos">
-        <div
-          className="justify-content-center-quemsomos"
+        <Card
           style={{
             backgroundColor: "#A31621",
+            justifyContent: "center",
             alignItems: "center",
             margin: "0 auto",
             maxWidth: "1156px",
@@ -24,7 +24,7 @@ function QuemSomos() {
           <Card.Title rounded style={{ color: "white" }}>
             Quem Somos
           </Card.Title>
-        </div>
+        </Card>
         <div className="texto-quemsomos">
           <h1 style={{ fontSize: "1.5rem" }}>
             A Alfa Discos foi criada com a finalidade de incentivar e alavancar
@@ -35,9 +35,9 @@ function QuemSomos() {
             estilos músicais.
           </h1>
 
-          <h1 style={{ fontSize: "1.5rem" }}>
+          <h2 style={{ fontSize: "1.5rem" }}>
             Vendemos não apenas CDs, mas o sonho de artistas.
-          </h1>
+          </h2>
 
           <h1 style={{ fontSize: "1.5rem" }}>
             Oferecemos as mais diversas experiência para nossos clientes, desde
