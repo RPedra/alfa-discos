@@ -2,21 +2,32 @@ import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
 import Rodape from "../Rodape";
 import Cabecalho from "../Cabecalho";
+import api from "../../services/api";
 import { Form, Button, Card } from "react-bootstrap";
 import "./Cadastro.css";
 
 function Cadastro() {
 
+    const [nome, setNome] = useState();
+    const [nascimento, setNascimento] = useState();
+    const [endereco, setEndereco] = useState();
     const [email, setEmail] = useState();
     const [senha, setSenha] = useState();
+    const [confirm, setConfirm] = useState();
     const history = useHistory();
-    function login(){
-        if(email === "abc@gmail.com" && senha === "123") {
-            alert ("Bem vindo!");
-            history.push("home");
-        }
-        else alert ("Dados incorretos");
-    }
+
+    async function handleCadastro(e){
+        e.preventDefault();
+        try {
+            if (senha != confirm) {alert("Falha na confirmação de senha")};
+            const response = await api.post("/users", {nome, email, senha, nascimento, endereco});
+            alert("Cadastro Criado!", response.data.user.nome);
+            history.push("/home");
+        } catch (error){
+            console.warn("Erro no cadastro de usuário:", error);
+            
+        }}
+
 
 
     return(
@@ -39,15 +50,15 @@ function Cadastro() {
                         <br/><br/>
                         <Form.Group className="mb-3" controlId="formBasicEmail" >
                             <Card.Title>Nome e Sobrenome</Card.Title>
-                            <Form.Control type="string" placeholder="Insira seu nome"  />
+                            <Form.Control type="string" placeholder="Insira seu nome" onChange={(e) => setNome(e.target.value)} />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicEmail" >
                             <Card.Title>Data de nascimento</Card.Title>
-                            <Form.Control type="date" placeholder="Insira sua data de nascimento"  />
+                            <Form.Control type="date" placeholder="Insira sua data de nascimento" onChange={(e) => setNascimento(e.target.value)} />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicEmail" >
                             <Card.Title>Endereço</Card.Title>
-                            <Form.Control type="email" placeholder="Insira seu endereço"  />
+                            <Form.Control type="email" placeholder="Insira seu endereço" onChange={(e) => setEndereco(e.target.value)} />
                         </Form.Group>               
                         <Form.Group className="mb-3" controlId="formBasicEmail" >
                             <Card.Title>E-mail</Card.Title>
@@ -59,7 +70,7 @@ function Cadastro() {
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Card.Title>Confirmação de Senha</Card.Title>
-                            <Form.Control type="password" placeholder="Digite novamente sua senha" />
+                            <Form.Control type="password" placeholder="Digite novamente sua senha" onChange={(e) => setConfirm(e.target.value)} />
                         </Form.Group>
                         <div className="cadastroButtons">
                             <Button style={{
@@ -67,7 +78,7 @@ function Cadastro() {
                                 height: '40px',
                                 margin: '0 auto',
                                 backgroundColor: '#A31621',
-                                borderColor: '#A31621' }} onClick={login} >Cadastrar
+                                borderColor: '#A31621' }} onClick={handleCadastro} >Cadastrar
                             </Button>
                         </div>
                     </Form>

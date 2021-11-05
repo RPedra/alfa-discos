@@ -17,7 +17,7 @@ function Login() {
     try {
       const response = await api.post("/login", { email, senha });
       alert("Bem vindo", response.data.user.nome);
-      // login(response.data.accessToken);
+      login(response.data.accessToken);
       history.push("/home");
     } catch (error) {
       if (error.response.status === 403) {
