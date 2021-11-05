@@ -105,7 +105,6 @@ function Explorar() {
                   name="categorias"
                   id="categorias"
                 >
-                  <option value="">Selecione a Categoria</option>
                   <option value="Sertanejo">Sertanejo</option>
                   <option value="Rock">Rock</option>
                   <option value="Eletronica">Eletrônica</option>

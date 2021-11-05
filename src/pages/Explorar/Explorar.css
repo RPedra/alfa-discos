@@ -47,7 +47,6 @@
 
 .filtro{
     display: flex;
-    
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(200px,2fr));
     width: 100%;

@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter, Route, Switch} from "react-router-dom"
+import { BrowserRouter, Route, Switch, Redirect} from "react-router-dom";
 
 //Rotas Gerais
 import Cadastro from "./pages/Cadastro";
@@ -8,7 +8,7 @@ import Explorar from "./pages/Explorar";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import QuemSomos from "./pages/QuemSomos";
-import Carrinho from "./pages/Carrinho"
+import Carrinho from "./pages/Carrinho";
 import FaleConosco from "./pages/FaleConosco";
 import Cabecalho from "./pages/Cabecalho";
 
@@ -26,55 +26,59 @@ import BluesJazz from "./pages/Categorias/BluesJazz";
 import Reggae from "./pages/Categorias/Reggae";
 import Classica from "./pages/Categorias/Classica";
 
-//Rotas dentro de cadastro
-import CadastroOne from "./pages/Cadastro/CadastroOne";
-
 //Rotas dentro de explorar
 import Todos from "./pages/Explorar/Todos";
+import { isAuthenticated } from "./services/auth";
 
-
+const PrivateRoute = ({ component: Component, ...rest }) => (
+  <Route
+    {...rest}
+    render={(props) =>
+      isAuthenticated() ? (
+        <Component {...props} />
+      ) : (
+        <Redirect
+          to={{ pathname: "/login", state: { from: props.location } }}
+        />
+      )
+    }
+  />
+);
 
 function Routes() {
-    return (
-        <BrowserRouter>
-            <Switch>
-                {/*ROTAS GERAIS*/}
-                <Route path = "/cadastro" component = {Cadastro} />
-                <Route path = "/categorias" component = {Categorias} />
-                <Route path = "/explorar" component = {Explorar} />
-                <Route path = "/home" component = {Home} />
-                <Route path = "/login" component = {Login} />
-                <Route path = "/QuemSomos" component = {QuemSomos} />
-                <Route path = "/carrinho" component = {Carrinho} />
-                <Route path = "/faleconosco" component = {FaleConosco} />
-                <Route path = "/temp" component = {Cabecalho} />
+  return (
+    <BrowserRouter>
+      <Switch>
+        {/*ROTAS GERAIS*/}
+        <Route path="/cadastro" component={Cadastro} />
+        <Route path="/categorias" component={Categorias} />
+        <Route path="/explorar" component={Explorar} />
+        <Route path="/home" component={Home} />
+        <Route path="/login" component={Login} />
+        <Route path="/QuemSomos" component={QuemSomos} />
+        <PrivateRoute path="/carrinho" component={Carrinho} />
+        <Route path="/faleconosco" component={FaleConosco} />
+        <Route path="/temp" component={Cabecalho} />
 
-                {/*ROTAS DENTRO DE CATEGORIAS*/}
-                <Route path = "/sertanejo" component = {Sertanejo} />
-                <Route path = "/MPB" component = {MPB} />
-                <Route path = "/PagodeSamba" component = {PagodeSamba} />
-                <Route path = "/rock" component = {Rock} />
-                <Route path = "/funk" component = {Funk} />
-                <Route path = "/rap" component = {Rap} />
-                <Route path = "/eletronica" component = {Eletronica} />
-                <Route path = "/POP" component = {POP} />
-                <Route path = "/gospel" component = {Gospel} />
-                <Route path = "/bluesjazz" component = {BluesJazz} />
-                <Route path = "/reggae" component = {Reggae} />
-                <Route path = "/classica" component = {Classica} />
-               
+        {/*ROTAS DENTRO DE CATEGORIAS*/}
+        <Route path="/sertanejo" component={Sertanejo} />
+        <Route path="/MPB" component={MPB} />
+        <Route path="/PagodeSamba" component={PagodeSamba} />
+        <Route path="/rock" component={Rock} />
+        <Route path="/funk" component={Funk} />
+        <Route path="/rap" component={Rap} />
+        <Route path="/eletronica" component={Eletronica} />
+        <Route path="/POP" component={POP} />
+        <Route path="/gospel" component={Gospel} />
+        <Route path="/bluesjazz" component={BluesJazz} />
+        <Route path="/reggae" component={Reggae} />
+        <Route path="/classica" component={Classica} />
 
-                {/*ROTAS DENTRO DE CADASTRO*/}
-                <Route path = "/cadastroone" component = {CadastroOne} />
-
-                {/*ROTA DENTRO DE EXPLORAR*/}
-                <Route path = "/todos" component = {Todos} />
-                
-            </Switch>
-        </BrowserRouter>
-    );
+        {/*ROTA DENTRO DE EXPLORAR*/}
+        <Route path="/todos" component={Todos} />
+      </Switch>
+    </BrowserRouter>
+  );
 }
-
-
 
 export default Routes;

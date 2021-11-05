@@ -12,7 +12,7 @@ function Login() {
   const [senha, setSenha] = useState();
   const history = useHistory();
 
-  async function login(e) {
+  async function handleLogin(e) {
     e.preventDefault();
     try {
       const response = await api.post("/login", { email, senha });
@@ -75,7 +75,7 @@ function Login() {
                   backgroundColor: "#A31621",
                   borderColor: "#A31621",
                 }}
-                onClick={login}
+                onClick={handleLogin}
               >
                 Login
               </Button>
