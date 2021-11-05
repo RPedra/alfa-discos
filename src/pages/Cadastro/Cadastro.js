@@ -8,7 +8,7 @@ import "./Cadastro.css";
 
 function Cadastro() {
   const [nome, setNome] = useState();
-  const [nascimento, setNascimento] = useState(new Date());
+  const [nascimento, setNascimento] = useState();
   const [endereco, setEndereco] = useState();
   const [email, setEmail] = useState();
   const [senha, setSenha] = useState();
@@ -17,25 +17,24 @@ function Cadastro() {
 
   async function handleCadastro(e) {
     e.preventDefault();
-    const body = {
+    try {
+      if (senha !== confirm) {
+        alert("Falha na confirmação de senha");
+      }
+      const response = await api.post("/users", {
         nome,
         email,
         senha,
         nascimento,
         endereco,
-    }
-    try {
-      if (senha !== confirm) {
-        alert("Falha na confirmação de senha");
-      }
-      const response = await api.post("/users", body);
-      alert("Cadastro Criado!");
-      history.push("/home");
+      });
+      alert("Cadastro Criado Com Sucesso!");
+      history.push("/home"); 
     } catch (error) {
       console.warn("Erro no cadastro de usuário:", error);
     }
   }
-  console.log(nascimento)
+
   return (
     <div className="cadastroPagina">
       <Cabecalho />
