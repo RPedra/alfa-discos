@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Cabecalho from "../Cabecalho";
 import { Card } from "react-bootstrap";
 import Cd from "../../Componentes/cd";
@@ -11,10 +11,19 @@ import { IconContext } from "react-icons/lib";
 import {FaSlidersH} from "react-icons/fa";
 import Rodape from "../Rodape";
 
+
 function Explorar() {
+
   const [visible, setVisible] = useState(false);
   const history = useHistory();
   const [viewCd, setViewCd] = useState();
+  const [cdlist, setCdList] = useState(cds);
+  const [filtro, setFiltro] = useState();
+  const [tipofiltro, setTipoFiltro] = useState();
+
+  useEffect(() => { 
+    
+  }, []) 
 
   function handleClick(cd) {
     setViewCd(cd);
@@ -22,6 +31,26 @@ function Explorar() {
 
   function handleClose() {
     setViewCd();
+  }
+
+  function handleSelectChange(e) {
+    setFiltro(e.target.value)
+    console.log(e.target.id)
+    setTipoFiltro(e.target.id)
+    if(e.target.id === "price"){
+      handlePriceFilter(e)
+    } else if(e.target.id === "categorias"){
+      setCdList(cds.filter(cd => cd.categoria === e.target.value))
+    }
+  }
+
+  function handlePriceFilter(e) {
+    if(e.target.value === "LowerPrice"){
+      console.log(cds.sort((a, b) => console.log(a,b)))
+      setCdList(cds.sort((a, b) => parseFloat(a.valor) - parseFloat(b.valor)))
+    } else {
+      setCdList(cds.sort((a, b) => parseFloat(b.valor) - parseFloat(a.valor)))
+    }
   }
 
   return (
@@ -71,11 +100,12 @@ function Explorar() {
                 <Card.Title rounded style={{ color: "Black" }}>
                   Categorias
                 </Card.Title>
-                <select
+                <select onChange={e => handleSelectChange(e)}
                   className="selectCategorias"
                   name="categorias"
                   id="categorias"
                 >
+                  <option value="">Selecione a Categoria</option>
                   <option value="Sertanejo">Sertanejo</option>
                   <option value="Rock">Rock</option>
                   <option value="Eletronica">Eletrônica</option>
@@ -94,34 +124,16 @@ function Explorar() {
                 <Card.Title rounded style={{ color: "Black" }}>
                   Preço
                 </Card.Title>
-                <select name="price" id="price">
+                <select name="price" id="price" onChange={e => handleSelectChange(e)}>
                   <option value="BiggerPrice">Maior para menor</option>
                   <option value="LowerPrice">Menor para maior</option>
-                </select>
-              </div>
-              <div className="filterInput">
-                <Card.Title rounded style={{ color: "Black" }}>
-                  Lançamento
-                </Card.Title>
-                <select name="time" id="time">
-                  <option value="Old">Novos</option>
-                  <option value="New">Antigos</option>
-                </select>
-              </div>
-              <div className="filterInput">
-                <Card.Title rounded style={{ color: "Black" }}>
-                  Mais vendidos
-                </Card.Title>
-                <select name="famous" id="famous">
-                  <option value="MoreF">Mais vendidos</option>
-                  <option value="LessF">Menos vendidos</option>
                 </select>
               </div>
             </div>
           )}
          </div>
           <div className="todosContainer" style={{ margin: "0 auto" }}>
-            {cds.map((cd) => (
+            {cdlist.map((cd) => (
               <Cd key={cds.id} cd={cd} onClick={handleClick} />
             ))}
           </div>
