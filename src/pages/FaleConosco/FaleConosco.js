@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Form, Card, FormGroup } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import Cabecalho from "../Cabecalho";
+import { IconContext } from "react-icons/lib";
+import {FaFacebookF, FaInstagram, FaWhatsapp} from "react-icons/fa";
+import {MdEmail} from "react-icons/md";
 import "./FaleConosco.css";
 import Rodape from "../Rodape";
 
@@ -32,42 +35,32 @@ function FaleConosco() {
             Fale Conosco
           </Card.Title>
         </Card>
-        <div className="inputs-FaleConosco">
-          <Form className="formulario-FaleConosco">
-            <br />
-            <br />
-            <FormGroup className="mb-3" controlId="formBasicNome">
-              <Card.Title>Nome (Obrigatório)</Card.Title>
-              <Form.Control
-                type="Nome"
-                onChange={(e) => setNome(e.target.value)}
-              />
-            </FormGroup>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Card.Title>E-mail (Obrigatório)</Card.Title>
-              <Form.Control
-                type="email"
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicAssunto">
-              <Card.Title>Assunto</Card.Title>
-              <Form.Control
-                type="Assunto"
-                onChange={(e) => setAssunto(e.target.value)}
-              />
-            </Form.Group>
-            <Form.Group className="SuaMensagem" controlId="formBasicMensagem">
-              <Card.Title>Sua Mensagem</Card.Title>
-              <Form.Control
-                type="mensagem"
-                onChange={(e) => setMensagem(e.target.value)}
-              />
-            </Form.Group>
-          </Form>
+        <div className="corpoFaleConosco">
+          <div>
+          <IconContext.Provider value={{size: '2rem'}}>
+            <FaFacebookF /> AlfaDiscos
+          </IconContext.Provider>
+          </div>
+          <div>
+          <IconContext.Provider value={{size: '2rem'}}>
+            <FaInstagram /> @alfadiscos
+          </IconContext.Provider>
+          </div>
+          <div>
+          <IconContext.Provider value={{size: '2rem'}}>
+            <FaWhatsapp /> (31) 33422-4121
+          </IconContext.Provider>
+          </div>
+          <div>
+          <IconContext.Provider value={{size: '2rem'}}>
+            <MdEmail /> contato@adiscos.com.br
+          </IconContext.Provider>
+          </div>
         </div>
       </div>
+      <div className="rodapeFooter">
       <Rodape />
+      </div>
     </div>
   );
 }
