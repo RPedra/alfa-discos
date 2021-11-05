@@ -1,8 +1,7 @@
 .FaleConosco-pagina{
     background-color: #F1E9DB;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    height: max-content;
+    height: 100%;
 
 }
 
@@ -12,9 +11,17 @@
     align-items: center;
     flex-direction: column;
 }
+.corpoFaleConosco{
+    font-family: 'Abhaya Libre', serif;
+    font-size: 2rem;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
 
-.SuaMensagem{
-    margin-bottom: 50px;
-    max-width: 1000px;
-    
+.rodapeFooter{
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
 }
