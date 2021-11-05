@@ -6,6 +6,7 @@ import {cds} from "../../../Componentes/cd/cd"
 import "./Rock.css"
 import { Modal } from "@material-ui/core";
 import CdModal from "../../../Componentes/CdModal";
+import Rodape from "../../Rodape";
 
 function Rock() {
 
@@ -26,9 +27,9 @@ function Rock() {
     }
     return (
     <>
-        <div className="pagina">
+        <div className="pagina_Rock">
             <Cabecalho/>
-            <div className="titulo">
+            <div className="titulo_Rock">
                 <Card className="justify-content-center" style= {{
                 backgroundColor: '#A31621', 
                 alignItems: 'center',
@@ -46,7 +47,7 @@ function Rock() {
                         ))}
                 </div>
             </div>
-        
+        <Rodape/>
         </div>
         <Modal open={viewCd} onClose={handleClose} className="modalStyle">
             <CdModal cd={viewCd} />

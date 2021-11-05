@@ -8,7 +8,7 @@ function Carta({carta}){
     return(
         <div className="cartas">
             <Card style={{ 
-                width: '328px', 
+                width: '300px', 
                 height: '377px', 
                 margin: '0 auto',  
                 boxShadow: '0px 4px 5px 0px rgba(0,0,0,0.25)',

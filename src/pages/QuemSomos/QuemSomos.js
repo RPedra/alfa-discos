@@ -3,18 +3,15 @@ import Cabecalho from "../Cabecalho";
 import { Card } from "react-bootstrap";
 import Rodape from "../Rodape";
 import "./QuemSomos.css";
-import Button from "@restart/ui/esm/Button";
-import { useHistory } from "react-router";
 
 function QuemSomos() {
-  const history = useHistory();
 
   return (
-    <div className="pagina">
+    <div className="pagina-quemsomos">
       <Cabecalho />
-      <div className="alinhamento">
+      <div className="alinhamento-quemsomos">
         <div
-          className="justify-content-center"
+          className="justify-content-center-quemsomos"
           style={{
             backgroundColor: "#A31621",
             alignItems: "center",
@@ -28,7 +25,7 @@ function QuemSomos() {
             Quem Somos
           </Card.Title>
         </div>
-        <div className="texto">
+        <div className="texto-quemsomos">
           <h1 style={{ fontSize: "1.5rem" }}>
             A Alfa Discos foi criada com a finalidade de incentivar e alavancar
             as vendas e o trabalho de artistas com um baixo orçamento.

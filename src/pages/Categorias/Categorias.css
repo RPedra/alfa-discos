@@ -21,7 +21,8 @@
     display: grid;
     grid-row-gap: 52px;
     align-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(361px,1fr));
+    background-color: #F1E9DB ;
+    grid-template-columns: repeat(auto-fill, minmax(328px,1fr));
 }
 
 

@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { Form, Card, FormGroup } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
+import React from "react";
+import { Card } from "react-bootstrap";
 import Cabecalho from "../Cabecalho";
 import { IconContext } from "react-icons/lib";
 import {FaFacebookF, FaInstagram, FaWhatsapp} from "react-icons/fa";
@@ -9,18 +8,12 @@ import "./FaleConosco.css";
 import Rodape from "../Rodape";
 
 function FaleConosco() {
-  const [nome, setEmail] = useState();
-  const [email, setNome] = useState();
-  const [assunto, setAssunto] = useState();
-  const [mensagem, setMensagem] = useState();
-  const history = useHistory();
 
   return (
     <div className="FaleConosco-pagina">
       <Cabecalho />
       <div className="FaleConosco-Titulo">
         <Card
-          className="justify-content-center-FaleConosco"
           style={{
             backgroundColor: "#A31621",
             alignItems: "center",
@@ -29,6 +22,7 @@ function FaleConosco() {
             width: "100%",
             height: "50px",
             boxShadow: "-4px 4px 5px 0px rgba(0,0,0,0.15)",
+            justifyContent: "center",
           }}
         >
           <Card.Title rounded style={{ color: "white" }}>

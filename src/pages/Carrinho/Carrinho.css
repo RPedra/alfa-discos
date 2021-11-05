@@ -1,3 +1,17 @@
-.pagina-Carrinho{
-    position: relative;
+.pagina-Carrinho {
+  height: 100%;
+  background-color: #f1e9db;
+}
+
+.corpoCarrinho {
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #f1e9db;
+}
+
+.carrinhoRodape{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 }

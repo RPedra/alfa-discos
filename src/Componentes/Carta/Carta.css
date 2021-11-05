@@ -1,6 +1,7 @@
 .cartas{
     display: flex;
     align-items: center;
+    background-color: #F1E9DB;
 }
 .botao{
     width: 85px;

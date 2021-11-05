@@ -1,27 +1,28 @@
-.FaleConosco-pagina{
-    background-color: #F1E9DB;
-    height: max-content;
-    height: 100%;
-
+.FaleConosco-pagina {
+  background-color: #f1e9db;
+  height: max-content;
 }
 
-.FaleConosco-Titulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.FaleConosco-Titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
-.corpoFaleConosco{
-    font-family: 'Abhaya Libre', serif;
-    font-size: 2rem;
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
+.corpoFaleConosco {
+  font-family: "Abhaya Libre", serif;
+  font-size: 2rem;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
-.rodapeFooter{
-    bottom: 0;
-    width: 100%;
-    padding-top: 20px;
+.rodapeFooter {
+  bottom: 0;
+  width: 100%;
+  padding-top: 20px;
 }

@@ -6,6 +6,7 @@ import { cds } from "../../../Componentes/cd/cd";
 import "./Sertanejo.css";
 import { Modal } from "@material-ui/core";
 import CdModal from "../../../Componentes/CdModal";
+import Rodape from "../../Rodape";
 
 function Sertanejo() {
   const [filter, setFilter] = useState();
@@ -56,6 +57,7 @@ function Sertanejo() {
             </div>
           </div>
         </div>
+        <Rodape/>
       </div>
       <Modal open={viewCd} onClose={handleClose} className="modalStyle">
         <CdModal cd={viewCd} />
